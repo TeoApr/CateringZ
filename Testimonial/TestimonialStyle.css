@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    background-color: #111111;
+    /* overflow-x: hidden; */
+}
+
+@font-face {
+    font-family: 'Mako';
+    src: url(../assets/mako_font/Mako-Regular.ttf) format('woff2');
+    font-weight: lighter;
+    font-style: normal;
+}
+
+.custom-font {
+    font-family: 'Mako', sans-serif;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111111;
+    padding: 0vh 5vh;
+    border: 2px solid #111111;
+    /* box-shadow: 0.5vh 0.5vh 1vh 0.5vh #111111; */
+    z-index: 2;
+}
+
+.navbar_logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar_logo img {
+    width: 17vw;
+}
+
+.navbar_content {
+    display: flex;
+    position: relative;
+    margin-left: 0;
+}
+
+.navbar_content a {
+    font-family: 'Mako';
+    color: white;
+    text-decoration: none;
+    font-size: 1.5vw;
+    margin-right: 2vw;
+    transition: color 0.3s ease;
+}
+
+.content:hover {
+    color: #FDA403;
+    text-decoration: underline;
+}
+
+
+.title{
+    margin: 0;
+}
+
+.title img{
+    position: absolute;
+    width: 99vw;
+    z-index: -1;
+}
+
+.title h1{
+    color: white;
+    font-family: 'Mako';
+    font-weight: bolder;
+    padding-left: 35vw;
+    padding-top: 13vw;
+    padding-bottom: 15vw;
+    font-size: 5vw;
+    justify-items: center;
+    align-items: center;
+}
+
+.title span{
+    color: #FDA403;
+}
+
+
+
+.testimonial-bg{
+    margin: 0;
+    flex-direction: column;
+}
+
+.testimonial-bg img{
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    opacity: 20%;
+    z-index: -1;
+}
+
+.testimonials{
+    margin-top: 10vw;
+    /* background-image: url(../assets/Testimonial/bg_2.jpg); */
+    background-color: #ffffff1c;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 100px;
+}
+
+.testi1{
+    background-size: cover;
+    display: flex;
+    padding: 10vw;
+    /* padding-top: 15vw; */
+    /* padding-bottom: 13vw; */
+}
+
+.testi1 img{
+    width: 40%;
+    z-index: 1;
+    float: left;
+}
+
+.testi1 h1{
+    color: white;
+    display: flex;
+    font-family: 'Mako';
+    font-weight: lighter;
+    padding-left: 2vw;
+    font-size: 2.5vw;
+}
+
+.testi1 p{
+    color: white;
+    font-family: 'Mako';
+    padding-left: 2vw;
+    padding-top: 1vw;
+    font-size: 1.5vw;
+}
+
+
+/*Footer*/
+.footer{
+    display: flex;
+    flex-direction: column;
+    border-top: solid 2px #fff;
+    padding-top: 3vw;
+    margin-top: 18vw;
+    background-color: #111111;
+}
+
+.logo-footer img{
+    padding-left: 3vw;
+    width: 25%;
+}
+
+.footer p{
+    color: white;
+    font-family: "Mako";
+    font-size: 1.25vw;
+    padding-left: 6.5vw;
+}
+
+.footer-content {
+    display: flex;
+    margin-top: 3vh;
+    margin-left: 6.5vw;
+    margin-bottom: 1vw;
+}
+
+.footer-content img{
+    width: 2.5vw;
+    margin-right: 3vw;
+    transition: all 0.5s ease;
+}
+
+.footer-content img:hover{
+    transform: scale(1.10);
+}
+
+.footer-left{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-left a{
+    color: white;
+    text-decoration: none;
+    font-family: "Mako";
+    font-size: 1vw;
+    padding-left: 35vw;
+    font-style: normal;
+    font-size: 3.75vw;
+}
+
+.footer-line{
+    border-top: solid 2px #fff;
+    border-color: white;
+    width: 86vw;
+    margin: 0 auto;
+    margin-top: 1.5vw;
+}
+
+.footer-content2{
+    display: flex;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+
+.footer-content2 p{
+    font-size: 1vw;
+    padding-right: 8vw;
+    padding-left: 6.5vw;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar{
+        /* margin-right: 10vw; */
+        justify-content: center;
+        flex-direction: column;
+        padding-bottom: 2vw;
+    }
+
+    .navbar_logo img {
+        width: 30%;
+        margin-left: 30vw;
+        /* padding-left: 25vw; */
+    }
+
+    .navbar_content a {
+        font-size: 2.5vw;
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+
+    .logo-footer{
+        padding-left: 30vw;
+    }
+
+    .logo-footer img{
+        width: 30vw;
+    }
+
+    .master p{
+        padding-left: 30vw;
+        font-size: 2vw;
+    }
+
+    .footer-content{
+        margin-left: 30vw;
+    }
+
+    .footer-content img{
+        width: 4vw;
+        margin-right: 5vw;
+    }
+
+    .footer-content2 p{
+        font-size: 1.5vw;
+        
+    }
+}
