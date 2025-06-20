@@ -1,0 +1,372 @@
+* {
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Mako';
+    src: url(../assets/mako_font/Mako-Regular.ttf) format('woff2');
+    font-weight: lighter;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    background-color: #111111;
+    font-family: 'Mako';
+    /* overflow-x: hidden; */
+}
+
+
+
+.custom-font {
+    font-family: 'Mako', sans-serif;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111111;
+    padding: 0vh 5vh;
+    border: 2px solid #111111;
+    /* box-shadow: 0.5vh 0.5vh 1vh 0.5vh #111111; */
+    z-index: 2;
+}
+
+.navbar_logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar_logo img {
+    width: 17vw;
+}
+
+.navbar_content {
+    display: flex;
+    position: relative;
+    margin-left: 0;
+}
+
+.navbar_content a {
+    font-family: 'Mako';
+    color: white;
+    text-decoration: none;
+    font-size: 1.5vw;
+    margin-right: 2vw;
+    transition: color 0.3s ease;
+}
+
+.content:hover {
+    color: #FDA403;
+    text-decoration: underline;
+}
+
+.header-content{
+    margin: 0;
+}
+
+.header-content img{
+    width: 99vw;
+    position: absolute;
+    z-index: -1;
+}
+
+.header-content h1{
+    color: white;
+    font-family: 'Mako';
+    font-weight: bolder;
+    padding-left: 30vw;
+    padding-right: 30vw;
+    padding-top: 13vw;
+    padding-bottom: 17vw;
+    font-size: 7vw;
+    justify-items: center;
+    align-items: center;
+}
+
+.header-content span{
+    color: #FDA403;
+}
+
+.phrase{
+    margin: 0;
+}
+
+.phrase p {
+    color: white;
+    font-family: 'Mako';
+    position: relative;
+}
+
+.p1{
+    align-items: center;
+    font-size: 1.7vw;
+    text-align: justify;
+    padding-left: 37.5vw;
+    margin-top: 3vw;
+}
+
+.p2{
+    align-items: center;
+    font-size: 1.7vw;
+    text-align: justify;
+    padding-left: 35.5vw;
+}
+
+.p3{
+    align-items: center;
+    font-size: 1.7vw;
+    text-align: justify;
+    padding-left: 40vw;
+    margin-bottom: 3vw;
+}
+
+.container {
+    /* width: 100%; */
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    padding: 1vw;
+    
+}
+
+.product-header {
+    position: absolute;
+    width: 15vw;
+    background-color: #ffc107;
+    padding: 1vw;
+    text-align: center;
+    margin-left: 40vw;
+    margin-right: 40vw;
+    border-radius: 50px;
+    transform: translateY(-30%);
+}
+
+.product-header h1 {
+    margin: 0;
+    font-size: 2vw;
+    font-family: 'Mako';
+}
+
+.product-content {
+    display: flex;
+    margin-top: 1%;
+    padding-top: 3vw;
+    background-color: #333;
+    color: #fff;
+    border-radius: 10px;
+    /* overflow: hidden; */
+}
+
+.product-content2 {
+    display: flex;
+    margin-top: 1%;
+    padding-top: 1vw;
+    background-color: #333;
+    color: #fff;
+    border-radius: 10px;
+    /* overflow: hidden; */
+}
+
+.image {
+    flex: 1;
+    /* max-width: 50%; */
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    margin: 1vw;
+    border-radius: 10px;
+}
+
+.text {
+    flex: 1;
+    padding: 1vw;
+    margin: 1vw;
+    margin-top: 0;
+}
+
+.text h2 {
+    margin-top: 0;
+    color: #ffc107;
+    font-size: 1.5vw;
+    font-family: 'Mako';
+}
+
+.text p {
+    margin-top: 0.5vw;
+    line-height: 1.6;
+    font-size: 1vw;
+}
+
+.text p:first-of-type {
+    font-weight: normal;
+}
+
+/*Footer*/
+.footer{
+    display: flex;
+    flex-direction: column;
+    border-top: solid 2px #fff;
+    padding-top: 3vw;
+    margin-top: 19vw;
+    background-color: #111111;
+}
+
+.logo-footer img{
+    padding-left: 3vw;
+    width: 25%;
+}
+
+.footer p{
+    color: white;
+    font-family: "Mako";
+    font-size: 1.25vw;
+    padding-left: 6.5vw;
+}
+
+.footer-content {
+    display: flex;
+    margin-top: 3vh;
+    margin-left: 6.5vw;
+    margin-bottom: 1vw;
+}
+
+.footer-content img{
+    width: 2.5vw;
+    margin-right: 3vw;
+    transition: all 0.5s ease;
+}
+
+.footer-content img:hover{
+    transform: scale(1.10);
+}
+
+.footer-left{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-left a{
+    color: white;
+    text-decoration: none;
+    font-family: "Mako";
+    font-size: 1vw;
+    padding-left: 35vw;
+    font-style: normal;
+    font-size: 3.75vw;
+}
+
+.footer-line{
+    border-top: solid 2px #fff;
+    border-color: white;
+    width: 86vw;
+    margin: 0 auto;
+    margin-top: 1.5vw;
+}
+
+.footer-content2{
+    display: flex;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+
+.footer-content2 p{
+    font-size: 1vw;
+    padding-right: 8vw;
+    padding-left: 6.5vw;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar{
+        /* margin-right: 10vw; */
+        justify-content: center;
+        flex-direction: column;
+        padding-bottom: 2vw;
+    }
+
+    .navbar_logo img {
+        width: 30%;
+        margin-left: 30vw;
+        /* padding-left: 25vw; */
+    }
+
+    .navbar_content a {
+        font-size: 2.5vw;
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+
+    .header-content h1{
+        font-size: 15vw;
+        padding: 0;
+        padding-left: 8vw;
+        padding-top: 7vw;
+        padding-bottom: 10vw;
+    }
+
+    .phrase{
+        display: none;
+    }
+
+    .product-content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-content2{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-content img{
+        width: 80vw;
+    }
+
+    .product-content2 img{
+        width: 80vw;
+    }
+
+    .text h2{
+        font-size: 4.5vw;
+        padding-left: 28vw;
+    }
+
+    .text p{
+        font-size: 2vw;
+        padding-left: 7vw;
+        padding-right: 7vw;
+    }
+
+
+    .logo-footer{
+        padding-left: 30vw;
+    }
+
+    .logo-footer img{
+        width: 30vw;
+    }
+
+    .master p{
+        padding-left: 30vw;
+        font-size: 2vw;
+    }
+
+    .footer-content{
+        margin-left: 30vw;
+    }
+
+    .footer-content img{
+        width: 4vw;
+        margin-right: 5vw;
+    }
+
+    .footer-content2 p{
+        font-size: 1.5vw;
+        
+    }
+}
